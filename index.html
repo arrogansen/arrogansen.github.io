@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>git page</title>
-    <!-- 使用柔和的中性色和清爽的字体 -->
+    <title>我的个人简历</title>
     <style>
         * {
             margin: 0;
@@ -14,7 +13,7 @@
 
         body {
             background-color: #f8fafc;
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
             color: #1e293b;
             padding: 2rem 1rem;
@@ -25,16 +24,10 @@
             margin: 0 auto;
             background-color: white;
             border-radius: 28px;
-            box-shadow: 0 20px 35px -8px rgba(0, 0, 0, 0.1), 0 4px 8px -2px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 20px 35px -8px rgba(0, 0, 0, 0.1);
             overflow: hidden;
-            transition: transform 0.2s ease;
         }
 
-        .resume-card:hover {
-            transform: translateY(-4px);
-        }
-
-        /* 头部区域 - 清爽的渐变 */
         .header {
             background: linear-gradient(135deg, #f1f5f9 0%, #e6edf5 100%);
             padding: 3rem 3rem 2rem 3rem;
@@ -71,14 +64,6 @@
             gap: 0.5rem;
         }
 
-        .contact-item i { 
-            width: 20px; 
-            color: #64748b;
-            font-style: normal;
-            font-weight: 500;
-        }
-
-        /* 主体布局 - 两栏 34% / 66% */
         .main-content {
             display: flex;
             flex-wrap: wrap;
@@ -96,7 +81,6 @@
             padding: 2.5rem 2.5rem 2.5rem 2rem;
         }
 
-        /* 通用模块样式 */
         .section {
             margin-bottom: 2.2rem;
         }
@@ -112,7 +96,6 @@
             padding-bottom: 0.5rem;
         }
 
-        /* 技能标签 */
         .skill-tags {
             display: flex;
             flex-wrap: wrap;
@@ -127,16 +110,8 @@
             font-size: 0.85rem;
             font-weight: 500;
             color: #1e293b;
-            transition: all 0.2s;
-            box-shadow: 0 1px 2px rgba(0,0,0,0.02);
         }
 
-        .skill-tag:hover {
-            background-color: #eef2f6;
-            border-color: #a0b8cc;
-        }
-
-        /* 教育/经历条目 */
         .entry {
             margin-bottom: 1.6rem;
         }
@@ -191,12 +166,10 @@
         .entry-desc li::before {
             content: "•";
             color: #7b8ea6;
-            font-weight: bold;
             position: absolute;
             left: 0;
         }
 
-        /* 自我介绍/摘要 */
         .summary {
             background-color: #f1f6fb;
             padding: 1.3rem 1.6rem;
@@ -207,14 +180,7 @@
             border: 1px solid #dfe9f2;
         }
 
-        hr {
-            border: none;
-            border-top: 1px dashed #d2dfeb;
-            margin: 1.5rem 0;
-        }
-
-        /* 小头像占位 / 可选 */
-        .profile-emoji {
+        .profile-placeholder {
             font-size: 3rem;
             background: white;
             width: 70px;
@@ -228,7 +194,6 @@
             border: 3px solid white;
         }
 
-        /* 响应式 */
         @media (max-width: 700px) {
             .header { padding: 2rem 1.5rem; }
             .name-title h1 { font-size: 2.5rem; }
@@ -239,91 +204,122 @@
                 padding: 2rem 1.8rem;
             }
             .content { padding: 2rem 1.8rem; }
-            .contact-bar { gap: 1rem; }
         }
     </style>
 </head>
 <body>
     <div class="resume-card">
-        <!-- 头部：姓名 + 简介 -->
         <div class="header">
-            <div class="profile-emoji">👤</div>
+            <div class="profile-placeholder">👤</div>
             <div class="name-title">
-                <h1>李明</h1>
-                <div class="tagline">产品设计师 · 创造简洁而优雅的体验</div>
+                <!-- 【在这里填写你的姓名】 -->
+                <h1>你的姓名</h1>
+                <!-- 【在这里填写你的职位/标签】 -->
+                <div class="tagline">你的职位 | 个人标签</div>
             </div>
 
-            <!-- 联系信息栏 (用纯文本模拟图标，也可以用字体图标，这里用最简单的方式) -->
             <div class="contact-bar">
-                <span class="contact-item"><i>📧</i>123@email.me</span>
-                <span class="contact-item"><i>📱</i> 123456 </span>
-                <span class="contact-item"><i>📍</i> Hainan</span>
+                <!-- 【修改成你的联系方式】 -->
+                <span class="contact-item">📧 你的邮箱</span>
+                <span class="contact-item">📱 你的电话</span>
+                <span class="contact-item">🌐 你的网站</span>
+                <span class="contact-item">📍 你的城市</span>
             </div>
         </div>
 
-        <!-- 主体：两栏布局 -->
         <div class="main-content">
-            <!-- 侧边栏：技能 / 语言 / 兴趣 -->
             <div class="sidebar">
-                <!-- 技能 -->
+                <!-- 技能部分 -->
                 <div class="section">
                     <div class="section-title">专业技能</div>
                     <div class="skill-tags">
-                       
+                        <!-- 【在这里填写你的技能】 -->
+                        <span class="skill-tag">技能1</span>
+                        <span class="skill-tag">技能2</span>
+                        <span class="skill-tag">技能3</span>
+                        <span class="skill-tag">技能4</span>
+                        <span class="skill-tag">技能5</span>
+                        <span class="skill-tag">技能6</span>
                     </div>
                 </div>
 
-
-                <!-- 证书/奖项 简洁版 -->
+                <!-- 语言部分 -->
                 <div class="section">
-                    <div class="section-title">荣誉 & 证书</div>
-                   
+                    <div class="section-title">语言</div>
+                    <div style="display: flex; flex-direction: column; gap: 0.6rem;">
+                        <!-- 【修改你的语言能力】 -->
+                        <div style="display: flex; justify-content: space-between;">
+                            <span>语言1</span> <span style="color:#5f7d9c;">熟练度</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between;">
+                            <span>语言2</span> <span style="color:#5f7d9c;">熟练度</span>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- 兴趣 / 其他 -->
+                <!-- 荣誉/证书部分 -->
                 <div class="section">
-                    <div class="section-title">日常灵感</div>
-                    <div class="skill-tags" style="margin-top: 0.3rem;">
-                        <span class="skill-tag">摄影</span>
-                        <span class="skill-tag">城市徒步</span>
+                    <div class="section-title">荣誉 & 证书</div>
+                    <!-- 【在这里填写你的荣誉】 -->
+                    <div style="margin-bottom:0.8rem;">
+                        <div style="font-weight: 600;">荣誉名称1</div>
+                        <div style="font-size:0.9rem; color:#526477;">颁发机构/年份</div>
+                    </div>
+                    <div>
+                        <div style="font-weight: 600;">荣誉名称2</div>
+                        <div style="font-size:0.9rem; color:#526477;">颁发机构/年份</div>
+                    </div>
+                </div>
 
+                <!-- 兴趣部分 -->
+                <div class="section">
+                    <div class="section-title">兴趣</div>
+                    <div class="skill-tags">
+                        <!-- 【填写你的兴趣】 -->
+                        <span class="skill-tag">兴趣1</span>
+                        <span class="skill-tag">兴趣2</span>
+                        <span class="skill-tag">兴趣3</span>
                     </div>
                 </div>
             </div>
 
-            <!-- 主内容：简介、工作经历、教育 -->
             <div class="content">
-                <!-- 简短介绍 -->
+                <!-- 个人简介 -->
                 <div class="summary">
-                  
+                    <!-- 【在这里填写你的个人简介】 -->
+                    ✦ 这里是你的个人简介，简单介绍你自己的背景、特长和职业目标。保持2-3句话。
                 </div>
 
                 <!-- 工作经历 -->
                 <div class="section">
                     <div class="section-title">工作经历</div>
                     
+                    <!-- 【可以复制这个块来添加多个工作经历】 -->
                     <div class="entry">
                         <div class="entry-header">
-                            <span class="entry-title"></span>
-                            <span class="entry-date"></span>
+                            <span class="entry-title">职位名称</span>
+                            <span class="entry-date">开始年份 – 结束年份</span>
                         </div>
-                        <div class="entry-subtitle"></div>
+                        <div class="entry-subtitle">公司名称 · 地点</div>
                         <div class="entry-desc">
                             <ul>
-                                
+                                <li>工作内容描述1</li>
+                                <li>工作内容描述2</li>
+                                <li>工作内容描述3</li>
                             </ul>
                         </div>
                     </div>
 
                     <div class="entry">
                         <div class="entry-header">
-                            <span class="entry-title">UI/UX 设计师</span>
-                            <span class="entry-date">2018 – 2021</span>
+                            <span class="entry-title">职位名称</span>
+                            <span class="entry-date">开始年份 – 结束年份</span>
                         </div>
-                        <div class="entry-subtitle">智悦设计 · 杭州</div>
+                        <div class="entry-subtitle">公司名称 · 地点</div>
                         <div class="entry-desc">
                             <ul>
-                                
+                                <li>工作内容描述1</li>
+                                <li>工作内容描述2</li>
                             </ul>
                         </div>
                     </div>
@@ -334,27 +330,32 @@
                     <div class="section-title">教育背景</div>
                     <div class="entry">
                         <div class="entry-header">
-                            <span class="entry-title"></span>
-                            <span class="entry-date">2014 – 2018</span>
+                            <span class="entry-title">学校名称</span>
+                            <span class="entry-date">入学年份 – 毕业年份</span>
                         </div>
-                        <div class="entry-subtitle"></div>
+                        <div class="entry-subtitle">专业 · 学位</div>
                         <div class="entry-desc">
-                            
+                            <!-- 可选的描述 -->
+                            主修课程/荣誉等（选填）
                         </div>
                     </div>
                 </div>
 
-                <!-- 额外小分隔线，可以放作品集链接等 -->
-                <hr>
+                <!-- 作品集链接（可选） -->
+                <hr style="border: none; border-top: 1px dashed #d2dfeb; margin: 1.5rem 0;">
                 <div style="text-align: right; font-size:0.9rem; color:#617b9b;">
-                    🌟 更多作品集可访问 liming.design/portfolio
+                    🌟 作品集链接：你的作品集网址
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- 极简脚注，保留个人气息 -->
+    <!-- 脚注（可选删除） -->
     <div style="max-width: 1000px; margin: 1rem auto 0; text-align: center; font-size: 0.8rem; color: #96a9bb;">
+        ✦ 保持简洁 · 保持真实 ✦
+    </div>
+</body>
+</html>
         ✦ 保持简洁 · 保持真实 ✦
     </div>
 </body>
